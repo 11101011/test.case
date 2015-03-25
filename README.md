@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Usage
 -----
 
@@ -8,3 +9,7 @@ Usage
 1) Run the pre-conditioner.
 
 2) Run the actual phase field solver.
+=======
+# test.case
+The name should be self-explanatory.
+>>>>>>> github/master
