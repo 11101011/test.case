@@ -1,6 +1,3 @@
-# test.case
-Yeah, the name is self-explanatory.
-
 Usage
 -----
 
@@ -9,4 +6,5 @@ Usage
     funkySetFields -time 0
     
 1) Run the pre-conditioner.
+
 2) Run the actual phase field solver.
