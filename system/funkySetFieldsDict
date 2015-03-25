@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    root            "/home/weiss/OpenFOAM/Test.Cases/interCHFoam.test/system/"
+    case            "interCHFoam.test";
+    instance        "system";
+    local           "";
+    class           dictionary;
+    object          funkySetFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+expressions
+(
+    GaussianNoise
+    {
+        field           alpha1;
+        expression      "randNormal() > 0.0 ? 0.55 : 0.45";
+        keepPatches     1;
+    }
+);
+
+// ************************************************************************* //
