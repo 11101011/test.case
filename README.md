@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Usage
 -----
 
@@ -11,5 +12,10 @@ Usage
 2) Run the actual phase field solver.
 =======
 # test.case
+The name should be self-explanatory.
+>>>>>>> github/master
+=======
+# test.case
+
 The name should be self-explanatory.
 >>>>>>> github/master
