@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 Usage
------
+=====
 
     blockMesh
     cp -r 0_org 0
@@ -10,12 +8,3 @@ Usage
 1) Run the pre-conditioner.
 
 2) Run the actual phase field solver.
-=======
-# test.case
-The name should be self-explanatory.
->>>>>>> github/master
-=======
-# test.case
-
-The name should be self-explanatory.
->>>>>>> github/master
