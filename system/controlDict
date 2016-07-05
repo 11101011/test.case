@@ -15,7 +15,8 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     phaseFieldFoam;
+application     preCPhaseFieldFoam;
+// application     phaseFieldFoam;
 
 startFrom       latestTime;
 
@@ -23,13 +24,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         1e-5;
+endTime         1e-7;
 
-deltaT          1e-5;
+deltaT          1e-8;
 
 writeControl    adjustableRunTime;
 
-writeInterval   1e-5;
+writeInterval   1e-7;
 
 purgeWrite      0;
 
@@ -48,8 +49,9 @@ runTimeModifiable yes;
 adjustTimeStep  yes;
 
 maxCo           0.1;
-maxAlphaCo      0.1;
 
-maxDeltaT       1e-5;
+maxAlphaCo      $maxCo;
+
+maxDeltaT       $deltaT;
 
 // ************************************************************************* //

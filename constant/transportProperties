@@ -34,10 +34,18 @@ sigma               sigma [ 1 0 -2 0 0 0 0 ] 0.07;
 
 //- Cahn-Hilliard model specific parameters
 
-filterAlpha        filterAlpha [ 0 0 0 0 0 0 0 ] 0.01;
+// limit for liquid alpha
+filterAlpha        filterAlpha [ 0 0 0 0 0 0 0 ] 0.99;
+
+// Capillary width
 thickness          thickness [ 0 1 0 0 0 0 0 ] 1e-5;
-Tr                 Tr [ 0 0 0 0 0 0 0 ] 0.001;
+
+// Reduced temperature parameter
+Tr                 Tr [ 0 0 0 0 0 0 0 ] 0;
+
 mobilityCourant    mobilityCourant [ 0 0 0 0 0 0 0 ] 0.001;
-theta              theta [ 0 0 0 0 0 0 0 ] 0.01;
+
+// Angle for interface slope calculations in grad
+theta              theta [ 0 0 0 0 0 0 0 ] 60;
 
 // ************************************************************************* //
