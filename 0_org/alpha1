@@ -24,6 +24,10 @@ boundaryField
     {
         type            zeroGradient;
     }
+    atmosphere
+    {
+        type            zeroGradient;
+    }
 }
 
 // ************************************************************************* //

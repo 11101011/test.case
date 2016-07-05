@@ -9,8 +9,8 @@ FoamFile
 {
     version         2.0;
     format          ascii;
-    root            "/home/weiss/OpenFOAM/Test.Cases/interCHFoam.test/system/"
-    case            "interCHFoam.test";
+    root            "./system"
+    case            "test.case";
     instance        "system";
     local           "";
     class           dictionary;
@@ -23,7 +23,7 @@ expressions
     GaussianNoise
     {
         field           alpha1;
-        expression      "randNormal() > 0.0 ? 0.55 : 0.45";
+        expression      "(alpha1==1) ? (randNormal() > 0.0 ? 0.55 : 0.45) : 0";
         keepPatches     1;
     }
 );

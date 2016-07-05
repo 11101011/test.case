@@ -35,9 +35,9 @@ sigma               sigma [ 1 0 -2 0 0 0 0 ] 0.07;
 //- Cahn-Hilliard model specific parameters
 
 filterAlpha        filterAlpha [ 0 0 0 0 0 0 0 ] 0.01;
-thickness          thickness [ 0 1 0 0 0 0 0 ] 1e-4;
+thickness          thickness [ 0 1 0 0 0 0 0 ] 1e-5;
 Tr                 Tr [ 0 0 0 0 0 0 0 ] 0.001;
-mobilityCourant    mobilityCourant [ 0 0 0 0 0 0 0 ] 0.01;
+mobilityCourant    mobilityCourant [ 0 0 0 0 0 0 0 ] 0.001;
 theta              theta [ 0 0 0 0 0 0 0 ] 0.01;
 
 // ************************************************************************* //
