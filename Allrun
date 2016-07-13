@@ -1,0 +1,26 @@
+#!/bin/bash
+
+source /opt/openfoam220/etc/bashrc
+
+if [ ! -d ./0 ]
+then
+    cp -r 0_org 0
+    setFields > setFields.log
+    funkySetFields -time 0 > funkySetFields.log
+    
+    cp ./system/controlDict.preC ./system/controlDict
+    echo "Running pre-conditioner ..."
+    preCPhaseFieldFoam > preCPhaseField.log
+    
+    cp ./system/controlDict.phase ./system/controlDict
+    echo "Running phaseFieldFoam ..."
+    phaseFieldFoam > phaseField.log
+else
+    cp ./system/controlDict.preC ./system/controlDict
+    echo "Running pre-conditioner ..."
+    preCPhaseFieldFoam > preCPhaseField.log
+    
+    cp ./system/controlDict.phase ./system/controlDict
+    echo "Running phaseFieldFoam ..."
+    phaseFieldFoam > phaseField.log
+fi

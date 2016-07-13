@@ -1,0 +1,6 @@
+#!/bin/bash
+
+shopt -s extglob
+
+rm -r !(0_org|constant|system|Allrun|Allclean|LICENSE|OFv220|README.md)
+echo "Removing time and log data ..."
