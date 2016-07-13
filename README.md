@@ -1,16 +1,11 @@
-Usage
-=====
+Application
+-----------
 
-0) Before you can run the solver, install swak4Foam (to run "funkySetFields") and build the case.
+3D test case for the pre-conditioner and the phase field solver.
+To run the test case run:
 
-        $ blockMesh
-        $ cp -r 0_org 0
-        $ setFields && funkySetFields -time 0
-    
-1) Run the pre-conditioner.
+    $ ./Allrun
 
-	$ preCPhaseFieldFoam
+For cleaning run:
 
-2) Run the actual phase field solver.
-
-	$ phaseFieldFoam
+    $ ./Allclean
