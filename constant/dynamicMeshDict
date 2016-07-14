@@ -24,8 +24,8 @@ dynamicRefineFvMeshCoeffs
     // Field to be refinement on
     field           alpha1;
     // Refine field inbetween lower..upper
-    lowerRefineLevel 0.49;
-    upperRefineLevel 0.51;
+    lowerRefineLevel 0.499;
+    upperRefineLevel 0.501;
     // If value < unrefineLevel unrefine
     unrefineLevel   10;
     // Have slower than 2:1 refinement
@@ -42,8 +42,6 @@ dynamicRefineFvMeshCoeffs
         (difFlux none)
         (phi none)
         (phi_0 none)
-        (phiAbs U)
-        (phiAbs_0 U_0)
         (nHatf none)
         (rho*phi none)
         (ghf none)
